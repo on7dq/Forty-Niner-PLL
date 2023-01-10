@@ -7,7 +7,7 @@ Another 49’er project with a digital VFO
 This project started as a basic 49er project, based on the QST article from March 2016, by Jack Purdum W8TEE et al.
 "A Modular 40 Meter CW Transceiver with VFO".
 
-Some changes were neeeded though.
+Some changes were needed though.
 
 The AD9850 DDS for the VFO has become difficult to source, and very expensive, so it was replaced by a Si5351 module.
 

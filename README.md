@@ -13,10 +13,13 @@ The AD9850 DDS for the VFO has become difficult to source, and very expensive, s
 
 A similar acrylic case for the project was found, it's the box of a video tape of the Philips VCR standard.
 
-This project is a work in progress, as we are still adding sompe stuff like : 
-selection of band and band limits, preprogrammed CQ message, adjustable OFFSET, PTT delay, WPM, SPLIT mode, etc ...
+This project is a work in progress, as we are still adding sompe stuff, but the software is already very capable.
+Features that are already implemented are: 
+selection of band and band limits, one preprogrammed CQ message, adjustable OFFSET with corresponding sidetone, 
+PTT delay, CQ WPM, RIT, SPLIT, SPOT, etc ...
+All parameters and the last used frequency are stored in EEPROM in the Arduino.
 
-The code also adds a software DDS for sidetone generation (pure sinewave), that follows the chosen frequency offset.
+The code includes a DDS for sidetone generation as a pure sinewave, a calibration routine for the Si5351 to 1/100th of a Hz.
 
 Credits
 

@@ -9,7 +9,7 @@ This project started as a basic 49er project, based on the QST article from Marc
 
 Some changes were neeeded though.
 
-The AD9850 DDS for the VFO has become difficult to source, and very expensive, so it was replaced by an Si5351 module.
+The AD9850 DDS for the VFO has become difficult to source, and very expensive, so it was replaced by a Si5351 module.
 
 A similar acrylic case for the project was found, it's the box of a video tape of the Philips VCR standard.
 

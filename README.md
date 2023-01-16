@@ -25,5 +25,5 @@ Credits
 
 The hardware is a cooperation between Luc ON7DQ and Gil ONL12523.
 The software is the work of Gil ONL12523.
-The documentation was written by Luc ON7DQ
+The documentation was written by Luc ON7DQ.
 Contributions of other authors are credited in the source code files.

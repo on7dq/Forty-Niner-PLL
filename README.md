@@ -26,6 +26,8 @@ All parameters, the last used frequency and, the RIT and SPLIT status are stored
 
 The code includes a DDS routine for generation of a pure sinewave sidetone, and a calibration routine for the Si5351 to 1/100th of a Hz.
 
+Download the files seperately, or just download the zip file and unzip it on you PC.
+
 Credits:
 
 The hardware is a cooperation between Luc ON7DQ and Gil ONL12523.

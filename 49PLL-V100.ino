@@ -15,6 +15,7 @@
 
 // using a UC-146 I2C interface for the LCD display, change address or pins if needed
 // the numbers are the port numbers of the PCF8574 chip
+// more info in this document https://cdn.shopify.com/s/files/1/1509/1638/files/Serielle_Schnittstelle_I2C_fur_LCD_Displays_Datenblatt.pdf
 //                    addr, en,rw,rs,d4,d5,d6,d7,bl,blpol  (bl = backlight)
 LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Create LCD object and set the LCD I2C address
 
@@ -23,13 +24,17 @@ LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE);  // Create LCD ob
 const char* morseText[] = { "CQ CQ DE ON7DQ ON7DQ PSE K",
                             "TEST RBN DE ON7DQ ON7DQ TEST RBN",
                             "VVV DE ON7DQ/B ON7DQ/B JO11KF PWR 1 WATT = 73",
-                            "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOGS BACK",
+                            "TEST",
                             };
+
+#define SAVETIMER 5 // after how much time actual frequency + RIT or SPLIT status is stored in EEPROM (seconds)
+                    // SAVETIMER = 0 means no saving to EEPROM, but the MENU values are still saved
 
 #define OFF   0
 #define ON    1
 
 #define CALIBRATION_ADDRESS 1000
+
 
 // pin definitions
 #define rotaryPin    4     // digital input pin for rotary encoder push switch
@@ -79,7 +84,7 @@ unsigned long pttTimer;
 unsigned long secTimer;
 
 int beaconTimer = 0; // beacon or autorepeat time at startup
-byte saveTimer = 5;  // after how much time is info stored in EEPROM (seconds)
+byte saveTimer = SAVETIMER;  
 
 long stepScale[] = {1000000,100000,10000,1000,500,100,10,1}; // possible frequency steps
 byte stepCursor[] = {4,5,6,7,8,9,10,11};  // underline cursor positions, corresponding to above steps
@@ -460,7 +465,7 @@ void update_freq(bool printLCD) {
   si5351.set_freq(rxFreq * 100ULL, SI5351_CLK1);
 
   setChanged = true;
-  saveTimer = 5;
+  saveTimer = SAVETIMER;
 }
 
 ISR(PCINT2_vect) {

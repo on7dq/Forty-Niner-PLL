@@ -27,8 +27,8 @@ All parameters, the last used frequency and, the RIT and SPLIT status are stored
 The code includes a DDS routine for generation of a pure sinewave sidetone, and a calibration routine for the Si5351 to 1/100th of a Hz.
 
 Download the .ino files separately, or just download the zip file and unzip it on you PC.
-Put all .ino files in a folder named "499PLL-V100".
-Open the main program 499PLL-V100.ino, edit your callsign, band limits, your messages etc, then compile and send the code to the Arduino.
+Put all .ino files in a folder named "49PLL-V100".
+Open the main program 49PLL-V100.ino, edit your callsign, band limits, your messages etc, then compile and send the code to the Arduino.
 You may have to install the libraries for the rotary encoder and the Si5351. 
 If you have trouble compiling, send me an e-mail via my QRZ.COM address.
 

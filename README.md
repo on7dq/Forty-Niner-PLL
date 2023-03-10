@@ -3,7 +3,7 @@ Another 49’er project with a digital VFO
 
 ![1 Forty Niner PLL in box](https://user-images.githubusercontent.com/17215772/212662253-904d3b2f-a5b2-466a-9a71-697ea7a8484d.jpg)
 
-This project started as a basic 49er project, based on the QST article from March 2016, by Jack Purdum W8TEE et al.
+This project started as a basic 49'er project, based on the QST article from March 2016, by Jack Purdum W8TEE et al.
 "A Modular 40 Meter CW Transceiver with VFO".
 
 Some changes were needed though.
@@ -21,12 +21,12 @@ WPM (for built-in messages),
 Beacon or Autorepeat timer for automatic transmission timing.
 
 Receive functions : RIT, SPLIT and SPOT.
-Selection of pre-programmed CQ or Beacon messages, with adjustable beaconing time up to 90 minute.
-All parameters, the last used frequency and, the RIT and SPLIT status are stored in EEPROM in the Arduino.
+Selection of pre-programmed CQ or Beacon messages, with adjustable beaconing time up to 90 minutes.
+All parameters, the last used frequency and the RIT and SPLIT status are stored in EEPROM in the Arduino.
 
-The code includes a DDS routine for generation of a pure sinewave sidetone, and a calibration routine for the Si5351 to 1/100th of a Hz.
+The code includes a software DDS routine for generation of a pure sinewave sidetone on a PWM pin of the Arduino, and a calibration routine for the Si5351 to 1/100th of a Hz.
 
-Download the .ino files separately, or just download the zip file and unzip it on you PC.
+Download the .ino files separately, or just download the zip file and unzip it on your PC.
 Put all .ino files in a folder named "49PLL-V100".
 Open the main program 49PLL-V100.ino, edit your callsign, band limits, your messages etc, then compile and send the code to the Arduino.
 You may have to install the libraries for the rotary encoder and the Si5351. 

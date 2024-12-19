@@ -32,6 +32,8 @@ Open the main program 49PLL-V100.ino, edit your callsign, band limits, your mess
 You may have to install the libraries for the rotary encoder and the Si5351. 
 If you have trouble compiling, send me an e-mail via my QRZ.COM address.
 
+Watch a video of what the software can do : https://www.youtube.com/watch?v=gwXqN8WTBO8 
+
 Credits:
 
 The hardware is a cooperation between Luc ON7DQ and Gil ONL12523.
